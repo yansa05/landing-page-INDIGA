@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-       ...     
-   </head>
-   <body>
-    <!--Navigasi Bar-->
-     <nav class="navbar">
-     ...
-   </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>INDIGA STUDIO | Indonesia Game Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+</head>
+<body>
 
-   <!--Header-->
-   <header class="jumbotron">
-       ...
-   </header>
+<div class="sidebar-right" id="sidebar">
+    <button class="btn btn-primary btn-lg btn-circle" onclick="sidebarClose()"> <i class="fa fa-times"></i> </button>
+    <a href="#home" class="active">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#games">GAMES</a>
+    <a href="#contact">CONTACT</a>
+</div>
 
-   <!--Service-->
-   <section id="services">
-       ...
-   </section>
+<div class="bg">
 
-   <!--Product-->
-   <section id="product">
-   ...
-   </section>
+    <nav class="navbar justify-content-between">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/logoindiga.png" alt="" srcset="" height="80px">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="#home" class="active">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#games">GAMES</a>
+            <a href="#contact">CONTACT</a>
+            <button class="btn btn-primary btn-lg icon" onclick="sidebarOpen()"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
 
-   <!--About-->
-   <section id="about">
-   ...
-   </section>
+    <br>
 
-   <!--Contact-->
-   <section id="contact">
-   ...
-   </section>
+    <div class="container-fluid">
 
-   <!--Footer-->
-   <footer>
-   ...
-   </footer>
+        <div class="d-sm-flex justify-content-around content">
+
+            <div class="content-left">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="text-blue"><b>INDIGA</b></h1>
+                <h1>STUDIO</h1>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <br>
+                <a href="#about" class="btn btn-primary btn-lg">READ MORE</a>
+            </div>
+
+            <div class="image1">
+                <img src="assets/image2.png" alt="" srcset="" height="450px">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script>
+    function sidebarOpen(){
+        document.getElementById("sidebar").style.transform = "translateX(0px)";
+    }
+    function sidebarClose(){
+        document.getElementById("sidebar").style.transform = "translateX(300px)";
+    }
+</script>
 </html>
