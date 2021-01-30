@@ -147,6 +147,29 @@ html,body{
     .image1{
         display: none;
     }
+    .cover {
+        background: no-repeat center/cover;
+        }
+    
+        h2:before,
+        h2:after {
+        background-color:steelblue ;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+        }
+        h2:before {
+        right: 0.5em;
+        margin-left: -50%;
+        }
+        h2:after {
+        left: 0.5em;
+        margin-right: -50%;
+        }
+
   }
 
 /* Extra large devices (large desktops) */
